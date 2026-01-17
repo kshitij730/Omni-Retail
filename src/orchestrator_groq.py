@@ -4,7 +4,7 @@ import sqlite3
 from typing import List, Dict, Any
 from groq import Groq
 from dotenv import load_dotenv
-from src.utils import execute_sql_query, get_schema
+from .utils import execute_sql_query, get_schema
 
 load_dotenv()
 

@@ -1,11 +1,14 @@
 @echo off
-echo Starting Omni-Retail System...
+set NEXT_TURBO=0
+echo [STATUS] Cleaning up existing sessions...
+for /f "tokens=5" %%a in ('netstat -aon ^| findstr :8000') do taskkill /F /PID %%a 2>nul
+echo [STATUS] Starting Omni-Retail Ecosystem...
 
-start "Omni-Backend" cmd /k "call run_backend.bat"
+:: Start Backend
+start "OmniBackend" cmd /k "python src/server.py"
 
-echo Waiting for backend...
-timeout /t 5
-
-echo Starting Frontend...
-cd omni-retail-web
+:: Start Frontend
+echo [STATUS] Starting Frontend UI...
 npm run dev
+
+echo Ecosystem is active.
