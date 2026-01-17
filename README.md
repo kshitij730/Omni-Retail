@@ -1,6 +1,6 @@
 # 🌌 Omni-Retail: Enterprise Multi-Agent Intelligence
 
-[![Live Demo](https://omni-retail-1.onrender.com/)](YOUR_RENDER_APP_URL_HERE)
+[![Live Demo](https://img.shields.io/badge/Live-Application-blueviolet?style=for-the-badge&logo=render)]([YOUR_RENDER_APP_URL_HERE](https://omni-retail-1.onrender.com/))
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-15+-black.svg)](https://nextjs.org/)
