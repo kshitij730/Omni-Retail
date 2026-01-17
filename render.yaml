@@ -1,0 +1,15 @@
+# Render Deployment Configuration
+# This tells Render how to build and run your application
+
+# Build Command (runs once during deployment)
+build:
+  - pip install -r requirements.txt
+  - npm install
+  - npm run build
+  - python setup_dbs.py
+
+# Start Command (runs to start your services)
+# Note: Render doesn't support multiple services in one config
+# You'll need to create TWO separate services on Render:
+# 1. Backend Service (Web Service)
+# 2. Frontend Service (Static Site or Web Service)
