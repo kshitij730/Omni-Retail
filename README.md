@@ -285,4 +285,4 @@ Distributed under the **MIT License**. See [LICENSE](./LICENSE) for more informa
 - **Year**: 2026
 ---
 
-**Engineered with ❤️ by Antigravity AI for the next generation of Agentic Commerce.**
+
