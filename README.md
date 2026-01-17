@@ -267,9 +267,3 @@ Distributed under the **MIT License**. See [LICENSE](./LICENSE) for more informa
 ### Repository Information
 - **Author**: Kshitij Sharma
 - **Year**: 2026
-- **GitHub**: [Link to Repository](https://github.com/your-username/omni-retail)
-- **Live Demo**: [Link to Render App](YOUR_RENDER_APP_URL_HERE)
-
----
-
-**Engineered with ❤️ by Antigravity AI for the next generation of Agentic Commerce.**
