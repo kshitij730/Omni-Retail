@@ -1,6 +1,7 @@
 # 🌌 Omni-Retail: Enterprise Multi-Agent Intelligence
 
-[![Live Demo](https://img.shields.io/badge/Live-Application-blueviolet?style=for-the-badge&logo=render)]([YOUR_RENDER_APP_URL_HERE](https://omni-retail-1.onrender.com/))
+[![Frontend](https://img.shields.io/badge/Frontend-Render-blueviolet?style=for-the-badge&logo=render)](https://omni-retail-1.onrender.com/)
+[![Backend](https://img.shields.io/badge/Backend-Vercel-black?style=for-the-badge&logo=vercel)](https://omni-retail.vercel.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-15+-black.svg)](https://nextjs.org/)
@@ -197,22 +198,37 @@ Test the full power of the multi-agent system with these queries:
 ### Local Development
 This project works perfectly for local development using the `run_all.bat` script or manual commands.
 
-### Production Deployment (Render.com) ⭐ Recommended
-This project is optimized for deployment on **[Render.com](https://render.com)**, which supports:
-- ✅ **SQLite databases** with persistent disk storage
-- ✅ **Python and Node.js** applications
-- ✅ **Free tier** available
-- ✅ **Auto-deploy** on git push
-- ✅ **Environment variables** management
+### Production Deployment (Hybrid Architecture) ⭐
+
+This project uses a **hybrid deployment strategy** for optimal performance:
+
+#### Backend API - Vercel
+- **Platform**: [Vercel](https://omni-retail.vercel.app/)
+- **Deployment**: Python FastAPI backend
+- **Features**:
+  - ✅ **Edge network** for global low-latency
+  - ✅ **Automatic scaling** and serverless functions
+  - ✅ **Free tier** available
+  - ✅ **Auto-deploy** on git push
+  - ✅ **Environment variables** management
+
+#### Frontend & Services - Render.com
+- **Platform**: [Render.com](https://omni-retail-1.onrender.com/)
+- **Deployment**: Next.js frontend application
+- **Features**:
+  - ✅ **Static site hosting** with CDN
+  - ✅ **Free tier** available
+  - ✅ **Auto-deploy** on git push
+  - ✅ **Custom domains** support
 
 **See [RENDER_DEPLOYMENT.md](./RENDER_DEPLOYMENT.md) for complete step-by-step deployment instructions.**
 
 ### Alternative Platforms
-- **Railway.app**: Supports SQLite with persistent volumes
-- **DigitalOcean App Platform**: Supports persistent storage
-- **Fly.io**: Supports persistent volumes
+- **Railway.app**: Alternative for backend with persistent volumes
+- **DigitalOcean App Platform**: Full-stack deployment option
+- **Fly.io**: Global edge deployment
 
-**Note**: Vercel and other serverless platforms are **not compatible** due to read-only filesystems (SQLite requires write access).
+**Note**: The backend uses Vercel's serverless functions, while the frontend leverages Render's static hosting for optimal performance and cost efficiency.
 
 ---
 
@@ -267,3 +283,6 @@ Distributed under the **MIT License**. See [LICENSE](./LICENSE) for more informa
 ### Repository Information
 - **Author**: Kshitij Sharma
 - **Year**: 2026
+---
+
+**Engineered with ❤️ by Antigravity AI for the next generation of Agentic Commerce.**
